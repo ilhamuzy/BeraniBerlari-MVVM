@@ -3,26 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/RunFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/RunFragment"
         android:name="com.example.beraniberlari.ui.view.RunFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/dashboard_fragment">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.beraniberlari.ui.view.DashboardFragment"
-        android:label="@string/second_fragment_label"
+        android:label="Run"
         tools:layout="@layout/run_fragment">
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.example.beraniberlari.ui.view.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/dashboard_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SettingFragment"
+        android:name="com.example.beraniberlari.ui.view.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/setting_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SetupFragment"
+        android:name="com.example.beraniberlari.ui.view.SetupFragment"
+        android:label="Setup"
+        tools:layout="@layout/setup_fragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/TrackingFragment"
+        android:name="com.example.beraniberlari.ui.view.TrackingFragment"
+        android:label="Tracking"
+        tools:layout="@layout/tracking_fragment">
+        
     </fragment>
 </navigation>

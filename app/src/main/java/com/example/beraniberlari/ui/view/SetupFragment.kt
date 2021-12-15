@@ -9,13 +9,16 @@ import androidx.fragment.app.viewModels
 import com.example.beraniberlari.R
 import com.example.beraniberlari.databinding.SetupFragmentBinding
 import com.example.beraniberlari.ui.viewmodel.SettingViewModel
+import com.example.beraniberlari.ui.viewmodel.SetupViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class SetupFragment : Fragment() {
 
     private var binding : SetupFragmentBinding? = null
 
-    private val viewModel : SettingViewModel by viewModels()
+    private val viewModel : SetupViewModel by viewModels()
 
 
     override fun onCreateView(
