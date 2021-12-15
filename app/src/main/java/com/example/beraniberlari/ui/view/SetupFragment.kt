@@ -1,6 +1,5 @@
 package com.example.beraniberlari.ui.view
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,31 +7,31 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.example.beraniberlari.R
-import com.example.beraniberlari.databinding.TrackingFragmentBinding
-import com.example.beraniberlari.ui.viewmodel.MainViewModel
-import com.example.beraniberlari.ui.viewmodel.TrackingViewModel
-import dagger.hilt.android.AndroidEntryPoint
+import com.example.beraniberlari.databinding.SetupFragmentBinding
+import com.example.beraniberlari.ui.viewmodel.SettingViewModel
 
-@AndroidEntryPoint
-class TrackingFragment : Fragment() {
 
-    private var binding : TrackingFragmentBinding? = null
+class SetupFragment : Fragment() {
 
-    private val viewModel: MainViewModel by viewModels()
+    private var binding : SetupFragmentBinding? = null
+
+    private val viewModel : SettingViewModel by viewModels()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = TrackingFragmentBinding.inflate(inflater, container,false)
+        binding = SetupFragmentBinding.inflate(inflater,container,false)
         context ?: return binding?.root
 
         binding.let { binder ->
 
-
         }
+
 
         return binding?.root
     }
+
 
 }

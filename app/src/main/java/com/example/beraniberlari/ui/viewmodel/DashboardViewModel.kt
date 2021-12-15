@@ -7,6 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
+//Statistik or dashboard
 class DashboardViewModel @Inject constructor(
     private val repository: MainRepository,
     private val dispatchers: DispathcerProvider

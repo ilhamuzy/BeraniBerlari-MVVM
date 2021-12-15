@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class RunViewModel @Inject constructor(
+class SetupViewModel @Inject constructor(
     private val repository: MainRepository,
     private val dispatchers: DispathcerProvider
 ) : ViewModel()  {
