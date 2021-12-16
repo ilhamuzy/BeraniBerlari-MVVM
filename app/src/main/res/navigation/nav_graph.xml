@@ -10,6 +10,10 @@
         android:name="com.example.beraniberlari.ui.view.RunFragment"
         android:label="Run"
         tools:layout="@layout/run_fragment">
+        <action
+            android:id="@+id/goToTracking"
+            app:destination="@id/TrackingFragment"
+            app:launchSingleTop="true"/>
 
     </fragment>
     <fragment
@@ -33,6 +37,10 @@
         android:name="com.example.beraniberlari.ui.view.SetupFragment"
         android:label="Setup"
         tools:layout="@layout/setup_fragment">
+        <action
+            android:id="@+id/goToRun"
+            app:destination="@id/RunFragment"
+            app:launchSingleTop="true"/>
 
     </fragment>
 
@@ -41,6 +49,10 @@
         android:name="com.example.beraniberlari.ui.view.TrackingFragment"
         android:label="Tracking"
         tools:layout="@layout/tracking_fragment">
+        <action
+            android:id="@+id/goToRun"
+            app:destination="@id/RunFragment"
+            app:launchSingleTop="true"/>
         
     </fragment>
 </navigation>
